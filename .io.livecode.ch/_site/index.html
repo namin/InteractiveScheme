@@ -1,9 +1,9 @@
 {% extends "base_livecode.html" %}
 
-{% block title %}miniKanren: an interactive Tutorial{% endblock %}
+{% block title %}Scheme: an interactive tutorial{% endblock %}
 
 {% block content %}
-<h2>Core miniKanren</h2>
+<h2>Lecture 1</h2>
 <p>
 Core miniKanren extends Scheme with three operations:
 <code>==</code>, <code>fresh</code>, and <code>conde</code>.
@@ -18,7 +18,7 @@ Scheme variables that are bound to new logic variables; <code>fresh</code>
 also performs conjunction of the relations within its body. Thus
 </p>
 <div class="live" id="ex1">
-(fresh (x y z) (== x z) (== 3 y))</div>
+(+ 3 4)</div>
 <p>
 would introduce logic variables <code>x</code>, <code>y</code>, and <code>z</code>,
 then associate <code>x</code> with <code>z</code> and <code>y</code>
